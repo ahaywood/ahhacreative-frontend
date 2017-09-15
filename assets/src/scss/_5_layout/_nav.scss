@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+
+.aside {
+    background: rgba($primary, .66);
+    grid-column: 1 / span 3;
+    padding: 35px $nav-left-padding;
+    position: relative;
+}
+
+.nav {
+    bottom: 35px;
+    position: fixed;
+
+    ul {
+        @include no-bullets;
+
+        li {
+            font-family: $brandon;
+            font-size: em(18px);
+        	line-height: 1.33;
+        	letter-spacing: 2.7px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+
+            body.home &.home,
+            body.about &.about,
+            body.services &.services {
+                margin-left: -#{$nav-left-padding};
+
+                :before {
+                    content: '';
+                    border-top: 1px solid white;
+                    float: left;
+                    margin-right: 10px;
+                    position: relative;
+                    top: 10px;
+                    width: calc(#{$nav-left-padding} - 10px);
+                }
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
