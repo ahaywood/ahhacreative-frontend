@@ -1,6 +1,3 @@
-//= include ../../../bower_components/jquery/dist/jquery.js
-//= include ../../../bower_components/jquery.fitvids/jquery.fitvids.js
-
 jQuery ( function($) {
 
 	var site = new SiteController($);
@@ -12,18 +9,22 @@ function SiteController($)
 {
 	self.init = function()
 	{
-		initFitVid();
+		initMobileNav();
 	}
 
-	// MAKES VIDEOS RESIZE RESPONSIVELY
-	function initFitVid() {
+	function initMobileNav() {
 
-		// TARGET YOUTUBE
-		$('iframe[src*="youtube"]').parent().fitVids();
+		// CLICK ON TRIGGER, OPEN THE MOBILE NAV
+		$('.js-mobile-trigger').click(function(e) {
+			e.preventDefault();
+			$('.js-mobile-nav').addClass('open');
+		});
 
-		// TARGET VIMEO
-		$('iframe[src*="vimeo"]').parent().fitVids();
-
+		// CLICK ON CLOSE BUTTON, CLOSE MOBILE NAV
+		$('.js-mobile-nav-close').click(function(e) {
+			e.preventDefault();
+			$('.js-mobile-nav').removeClass('open');
+		});
 	}
 
 	return self;

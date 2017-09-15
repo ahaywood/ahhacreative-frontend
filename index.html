@@ -28,7 +28,28 @@
 
         </script>
 
+        <nav class="mobile-nav js-mobile-nav">
+            <div class="mobile-nav__close">
+                <a href="#" class="js-mobile-nav-close">&times;</a>
+            </div>
+            <ul>
+                <li class="home"><a href="#">Home</a></li>
+                <li class="about"><a href="#">About</a></li>
+                <li class="services"><a href="#">Services</a></li>
+                <li class="articles"><a href="#">Articles</a></li>
+                <li class="case-studies"><a href="#">Case Studies</a></li>
+                <li class="work"><a href="#">Work</a></li>
+                <li class="contact-us"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
         <div class="grid">
+
+            <div class="hamburger">
+                <a href="#" class="js-mobile-trigger">
+                    <svg class="icon icon-menu"><use xlink:href="/assets/dist/img/symbol-defs.svg#icon-menu"></use></svg>
+                </a>
+            </div>
 
             <aside class="aside">
                 <!-- LOGO -->
@@ -111,26 +132,52 @@
 
             <!-- FOOTER -->
             <footer class="footer">
-                <div class="footer__social-media">
-                    <ul class="social-media">
-                        <li><a href="#"></a></li>
-                    </ul>
-                </div>
-                <div class="footer__copyright">
-                    Copyright &copy; 2017. Ah Ha Creative. All Rights Reserved.
-                </div>
-                <div class="footer__legal">
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
-                    </ul>
+                <div class="footer__content">
+                    <div class="footer__social-media">
+                        <ul class="social-media">
+                            <!-- FACEBOOK -->
+                            <li><a href="#"><svg class="icon icon-facebook"><use xlink:href="/assets/dist/img/symbol-defs.svg#icon-facebook"></use></svg></li>
+
+                            <!-- INSTAGRAM -->
+                            <li><a href="#"><svg class="icon icon-instagram"><use xlink:href="/assets/dist/img/symbol-defs.svg#icon-instagram"></use></svg></li>
+
+                            <!-- TWITTER -->
+                            <li><a href="#"><svg class="icon icon-twitter"><use xlink:href="/assets/dist/img/symbol-defs.svg#icon-twitter"></use></svg></li>
+
+                            <!-- YOUTUBE -->
+                            <li><a href="#"><svg class="icon icon-youtube"><use xlink:href="/assets/dist/img/symbol-defs.svg#icon-youtube"></use></svg></li>
+
+                            <!-- DRIBBBLE -->
+                            <li><a href="#"><svg class="icon icon-dribbble"><use xlink:href="/assets/dist/img/symbol-defs.svg#icon-dribbble"></use></svg></li>
+
+                            <!-- GITHUB -->
+                            <li><a href="#"><svg class="icon icon-github"><use xlink:href="/assets/dist/img/symbol-defs.svg#icon-github"></use></svg></li>
+
+                            <!-- LINKEDIN -->
+                            <li><a href="#"><svg class="icon icon-linkedin"><use xlink:href="/assets/dist/img/symbol-defs.svg#icon-linkedin"></use></svg></li>
+
+
+
+                        </ul>
+                    </div>
+                    <div class="footer__copyright">
+                        Copyright &copy; 2017. Ah Ha Creative. All Rights Reserved.
+                    </div>
+                    <br clear="both" />
+                    <div class="footer__legal">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
                 </div>
             </footer>
 
         </div><!-- /.grid -->
 
         <!-- JAVASCRIPT -->
-        <script src="/assets/dist/js/app.js" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/src/js/app-min.js" charset="utf-8"></script>
 
     </body>
 </html>

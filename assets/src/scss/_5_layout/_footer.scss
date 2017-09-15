@@ -2,8 +2,95 @@
     #FOOTER
 \*------------------------------------*/
 .footer {
+	background: path('bg-footer.jpg') center top no-repeat;
+	background-size: cover;
+	display: block;
+	min-height: 428px;
+	grid-column: 1 / span 12;
+	position: relative;
+
+	&:after {
+		background: rgba(black, 0.5);
+		content: '';
+		display: block;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		z-index: map-get($zindex, footer-overlay);
+	}
+
+	a {
+		color: white;
+		opacity: 1;
+
+		&:hover {
+			color: white;
+			opacity: 0.5;
+		}
+	}
+
+	&__content {
+		position: relative;
+		z-index: map-get($zindex, footer-content);
+	}
+
+	&__social-media {
+		justify-content: center;
+		display: flex;
+		width: 100%;
+
+		li {
+			margin-right: 20px;
+		}
+
+		svg {
+			fill: currentColor;
+			height: 35px;
+			width: 35px;
+		}
+	}
+
+
+
+
+	/*------------------------------------*\
+	    #COPYRIGHT
+	\*------------------------------------*/
 
 	.copyright {
-		
+
+	}
+
+
+
+
+	/*------------------------------------*\
+	    #LEGAL
+	\*------------------------------------*/
+
+	&__legal {
+
+		ul {
+			@include no-bullets;
+
+			li {
+				display: inline;
+
+				&:last-child:after {
+					content: '';
+				}
+
+				&:after {
+					content: '|';
+					color: white;
+					display: inline;
+					margin: 0 7px;
+				}
+			}
+		}
 	}
 }

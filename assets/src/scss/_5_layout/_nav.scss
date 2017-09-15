@@ -4,9 +4,15 @@
 
 .aside {
     background: rgba($primary, .66);
+    display: none;
     grid-column: 1 / span 3;
     padding: 35px $nav-left-padding;
     position: relative;
+    z-index: map-get($zindex, aside);
+
+    @include breakpoint(portrait) {
+        display: block;
+    }
 }
 
 .nav {
@@ -45,5 +51,82 @@
             color: white;
             text-decoration: none;
         }
+    }
+}
+
+
+
+
+/*------------------------------------*\
+    #HAMBURGER
+\*------------------------------------*/
+.hamburger {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: map-get($zindex, hamburger);
+
+    @include breakpoint(portrait) {
+        display: none;
+    }
+
+
+
+    svg {
+        fill: black;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.mobile-nav {
+    align-items: center;
+    background: $primary;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    transition: bottom 0.25s ease-in-out,
+        top 0.25s ease-in-out;
+    z-index: map-get($zindex, mobile-nav);
+
+    &.open {
+        bottom: 0;
+        top: 0;
+    }
+
+    &__close {
+        color: white;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        a {
+            color: white;
+            font-size: em(32px);
+            text-decoration: none;
+        }
+    }
+
+    ul {
+        @include no-bullets;
+
+        li {
+            font-family: $brandon;
+            font-size: em(18px);
+        	line-height: 1.33;
+        	letter-spacing: 2.7px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+         a {
+             color: white;
+             text-decoration: none;
+         }
     }
 }

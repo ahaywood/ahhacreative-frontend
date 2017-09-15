@@ -37,11 +37,31 @@
 		"oAP": "\/assets\/dist\/fonts\/readme.txt",
 		"oF": 0
 		},
+	"\/assets\/dist\/img\/bg-footer.jpg": {
+		"ft": 16384,
+		"iS": 207888,
+		"oA": 0,
+		"oAP": "\/assets\/dist\/img\/bg-footer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/assets\/dist\/img\/readme.txt": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/dist\/img\/readme.txt",
 		"oF": 0
+		},
+	"\/assets\/dist\/img\/symbol-defs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/dist\/img\/symbol-defs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/assets\/dist\/js\/production.js": {
 		"ft": 64,
@@ -72,7 +92,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/src\/js\/app-min.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/assets\/src\/scss\/_1_base\/_base.scss": {
@@ -461,6 +481,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/src\/scss\/_6_pieces\/_pieces.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/src\/scss\/_6_pieces\/_social-media.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/src\/scss\/_6_pieces\/_social-media.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
