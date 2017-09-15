@@ -3,10 +3,10 @@
 \*------------------------------------*/
 
 .aside {
-    align-items: flex-end;
+
     background: rgba($primary, .66);
     box-sizing: border-box;
-    display: flex;
+
     height: 100%;
     padding: 50px 35px;
     width: 100%;
@@ -15,6 +15,9 @@
 
         &__wrapper {
             position: fixed;
+            display: flex;
+            align-items: flex-end;
+            height: 100vh;
         }
 
         ul {
