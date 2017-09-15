@@ -1,0 +1,9 @@
+/*------------------------------------*    #GRID-SETTINGS
+\*------------------------------------*/
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  max-width: 1300px;
+  position: relative; }
