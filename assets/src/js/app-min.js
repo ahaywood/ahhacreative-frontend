@@ -1,1 +1,0 @@
-function SiteController($){function e(){$(".js-mobile-trigger").click(function(e){e.preventDefault(),$(".js-mobile-nav").addClass("open")}),$(".js-mobile-nav-close").click(function(e){e.preventDefault(),$(".js-mobile-nav").removeClass("open")})}return self.init=function(){e()},self}jQuery(function($){new SiteController($).init()});

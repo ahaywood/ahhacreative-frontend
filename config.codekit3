@@ -63,12 +63,12 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/assets\/dist\/js\/production.js": {
+	"\/assets\/dist\/js\/app-dist.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/assets\/dist\/js\/production-min.js",
+		"oAP": "\/assets\/dist\/js\/app-dist-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
