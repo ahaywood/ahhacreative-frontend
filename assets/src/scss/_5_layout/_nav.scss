@@ -6,7 +6,7 @@
     background: rgba($primary, .66);
     display: none;
     grid-column: 1 / span 3;
-    padding: 35px $nav-left-padding;
+    padding: 100px $nav-left-padding;
     position: relative;
     z-index: map-get($zindex, aside);
 
@@ -15,9 +15,13 @@
     }
 }
 
+.logo {
+    margin-bottom: 50px;
+}
+
 .nav {
-    bottom: 35px;
-    position: fixed;
+    position: sticky;
+    top: 60px;
 
     ul {
         @include no-bullets;
