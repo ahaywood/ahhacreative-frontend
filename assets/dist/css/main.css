@@ -597,16 +597,42 @@ form {
   margin: 0;
   padding: 0; }
 
+label {
+  display: block;
+  font-family: "brandon-grotesque";
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  position: relative;
+  top: 45px;
+  -webkit-transition: top 0.5s ease-in-out;
+  -o-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out; }
+  label.out-of-the-way {
+    top: 0; }
+  .radio-buttons label {
+    display: inline;
+    top: 0; }
+
 input[type=text],
 input[type=email],
 input[type=url],
 input[type=phone],
 textarea {
+  background: #efefef;
   border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-shadow: none;
   box-shadow: none;
+  font-family: "Noto Serif";
+  font-size: 1.125em;
+  margin-bottom: 30px;
   outline: none;
-  text-shadow: none; }
+  padding: 15px;
+  text-shadow: none;
+  width: 100%; }
   input[type=text]:hover,
   input[type=email]:hover,
   input[type=url]:hover,
@@ -624,6 +650,19 @@ textarea {
     box-shadow: none;
     outline: none;
     text-shadow: none; }
+
+input[type=radio] {
+  display: none; }
+
+input[type=radio] + label {
+  background: url("../img/radio--unchecked.svg") left top no-repeat;
+  background-size: 20px 20px;
+  line-height: 25px;
+  padding-left: 30px; }
+
+input[type=radio]:checked + label {
+  background: url("../img/radio--checked.svg") left top no-repeat;
+  background-size: 20px 20px; }
 
 button,
 input[type=submit] {
@@ -849,6 +888,15 @@ ul.social-media {
 \*------------------------------------*/
 /*------------------------------------*    #HOME
 \*------------------------------------*/
+.home {
+  display: block; }
+  @supports ((display: -webkit-box) or (display: flex)) {
+    .home {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+
 /*------------------------------------*    #NEED-HELP-WITH
 \*------------------------------------*/
 .need-help-with {

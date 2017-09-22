@@ -1,18 +1,36 @@
 /*------------------------------------*\
     #FORM
 \*------------------------------------*/
-form { 
-	margin: 0; 
-	padding: 0; 
+form {
+	margin: 0;
+	padding: 0;
 }
 
 
 label {
+	display: block;
+	font-family: $brandon;
+	letter-spacing: 2.7px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	position: relative;
+	top: 45px;
+	transition: top 0.5s ease-in-out;
+
+	&.out-of-the-way {
+		top: 0;
+	}
+
+	.radio-buttons & {
+		display: inline;
+		top: 0;
+	}
 }
 
 
 ::placeholder {
-	
+
 }
 
 
@@ -20,19 +38,26 @@ input[type=text],
 input[type=email],
 input[type=url],
 input[type=phone],
-textarea { 
-	border: none; 
-	box-shadow: none; 
+textarea {
+	background: $almost-white;
+	border: none;
+	box-sizing: border-box;
+	box-shadow: none;
+	font-family: $serif;
+	font-size: em(18px);
+	margin-bottom: 30px;
 	outline: none;
-	text-shadow: none; 
-	
-	&:hover { 
-		border: none; 
+	padding: 15px;
+	text-shadow: none;
+	width: 100%;
+
+	&:hover {
+		border: none;
 		outline: none;
 	}
-	
-	&:focus { 
-		border: none; 
+
+	&:focus {
+		border: none;
 		box-shadow: none;
 		outline: none;
 		text-shadow: none;
@@ -40,12 +65,29 @@ textarea {
 
 }
 
-textarea { 
+input[type=radio] {
+	display: none;
+}
+
+input[type=radio] + label {
+	background: url('../img/radio--unchecked.svg') left top no-repeat;
+	background-size: 20px 20px;
+	line-height: 25px;
+	padding-left: 30px;
+}
+
+input[type=radio]:checked + label {
+	background: url('../img/radio--checked.svg') left top no-repeat;
+	background-size: 20px 20px;
+}
+
+
+textarea {
 }
 
 
 button,
-input[type=submit] { 
-	border: none; 
-	cursor: pointer; 
+input[type=submit] {
+	border: none;
+	cursor: pointer;
 }

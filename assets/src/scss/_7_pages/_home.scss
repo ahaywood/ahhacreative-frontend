@@ -4,7 +4,11 @@
 
 
 .home {
+    display: block;
 
+    @supports(display:flex) {
+        display: flex;
+    }
 }
 
 
