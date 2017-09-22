@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    #SOCIAL-MEDIA
+\*------------------------------------*/
+
+ul.social-media {
+    @include no-bullets;
+
+    li {
+        float: left;
+    }
+}

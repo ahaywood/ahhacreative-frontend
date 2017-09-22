@@ -1,8 +1,7 @@
 /*------------------------------------*\
-    #LAYOUT
+    #CONTENT
 \*------------------------------------*/
 
-@import "header";
-@import "nav";
-@import "content";
-@import "footer";
+.main {
+    grid-column: 4 / span 9;
+}

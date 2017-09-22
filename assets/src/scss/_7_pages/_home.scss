@@ -1,3 +1,51 @@
+/*------------------------------------*\
+    #HOME
+\*------------------------------------*/
+
+
 .home {
-    background: black;
+    display: block;
+
+    @supports(display:flex) {
+        display: flex;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #NEED-HELP-WITH
+\*------------------------------------*/
+
+.need-help-with {
+    @include clearfix;
+    background: blue;
+
+    ol {
+        list-style-type: none;
+        margin: 0 0 30px;
+        padding: 0;
+        counter-reset: need-help-list;
+
+        li {
+            background: white;
+            padding: 30px 70px;
+            position: relative;
+
+            &:before {
+                content: counter(need-help-list);
+                counter-increment: need-help-list;
+                font-size: em(88px);
+                line-height: 1;
+                color: white;
+                background: black;
+                position: absolute;
+                top: -10px;
+                left: -10px;
+            }
+
+        }
+    }
 }
