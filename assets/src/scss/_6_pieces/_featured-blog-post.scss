@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    #FEATURED-BLOG-POST
+\*------------------------------------*/
+
+.featured-blog-post {
+
+    p {
+        font-family: $sans-serif;
+        font-size: em(18);
+        line-height: em(32);
+
+        &:first-of-type {
+            font-family: $serif;
+            font-size: em(25, 18);
+            font-weight: $weight-bold;
+            line-height: em(42, 25);
+            letter-spacing: -0.1px;
+
+            &::first-letter {
+                font-family: $condensed;
+                color: white;
+                background: black;
+                font-size: em(88, 25);
+                padding: 0 10px;
+            }
+        }
+    }
+
+}

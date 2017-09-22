@@ -65,6 +65,30 @@ textarea {
 
 }
 
+textarea {
+}
+
+
+/*-------------------------------------------------------------*\
+
+    #RADIO-BUTTONS
+
+	HTML structure should look similar to the following:
+
+	| <div class="form-field radio-buttons">
+	| 	<p>
+	| 		<input type="radio" name="field" id="item_1" />
+	| 		<label for="item_1">Item 1</label>
+	| 	</p>
+	|
+	| 	<p>
+	| 		<input type="radio" name="field" id="item_2" />
+	| 		<label for="item_2">Item 2</label>
+	| 	</p>
+	| </div>
+
+\*-------------------------------------------------------------*/
+
 input[type=radio] {
 	display: none;
 }
@@ -82,10 +106,11 @@ input[type=radio]:checked + label {
 }
 
 
-textarea {
-}
 
 
+/*------------------------------------*\
+    #BUTTON
+\*------------------------------------*/
 button,
 input[type=submit] {
 	border: none;

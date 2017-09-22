@@ -651,6 +651,24 @@ textarea {
     outline: none;
     text-shadow: none; }
 
+/*-------------------------------------------------------------*
+    #RADIO-BUTTONS
+
+	HTML structure should look similar to the following:
+
+	| <div class="form-field radio-buttons">
+	| 	<p>
+	| 		<input type="radio" name="field" id="item_1" />
+	| 		<label for="item_1">Item 1</label>
+	| 	</p>
+	|
+	| 	<p>
+	| 		<input type="radio" name="field" id="item_2" />
+	| 		<label for="item_2">Item 2</label>
+	| 	</p>
+	| </div>
+
+\*-------------------------------------------------------------*/
 input[type=radio] {
   display: none; }
 
@@ -664,6 +682,8 @@ input[type=radio]:checked + label {
   background: url("../img/radio--checked.svg") left top no-repeat;
   background-size: 20px 20px; }
 
+/*------------------------------------*    #BUTTON
+\*------------------------------------*/
 button,
 input[type=submit] {
   border: none;
@@ -883,6 +903,25 @@ ul.social-media {
   padding: 0; }
   ul.social-media li {
     float: left; }
+
+/*------------------------------------*    #FEATURED-BLOG-POST
+\*------------------------------------*/
+.featured-blog-post p {
+  font-family: "Lato";
+  font-size: 1.125em;
+  line-height: 2em; }
+  .featured-blog-post p:first-of-type {
+    font-family: "Noto Serif";
+    font-size: 1.38889em;
+    font-weight: 800;
+    line-height: 1.68em;
+    letter-spacing: -0.1px; }
+    .featured-blog-post p:first-of-type::first-letter {
+      font-family: "alternate-gothic-no-1-d";
+      color: white;
+      background: black;
+      font-size: 3.52em;
+      padding: 0 10px; }
 
 /*------------------------------------*    #PAGES
 \*------------------------------------*/
